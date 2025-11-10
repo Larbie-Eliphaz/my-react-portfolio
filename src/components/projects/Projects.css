@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #007bff;
+  --accent-color: #ff00ff;
+  --header-bg: #0a192f;
+  --btn-hover: hsl(300, 100%, 40%);
+  --icon-hover: #e65100;
+  --footer-color: #1c1c1c;
+  --text-color-1: #ffffff;
+  --text-color-2: linear-gradient(45deg, #3f0028, #582300);
+}
+
+.projects {
+  padding: 5% 8%;
+  text-align: center;
+}
+.projects h1 {
+  color: var(--text-color-2);
+  font-size: 40px;
+}
+
+.projects hr {
+  border: 4px solid var(--accent-color);
+  width: 12%;
+  margin: 1% auto 5%;
+  opacity: 1;
+}
+
+.projects .card {
+  display: inline-block;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin: 1%;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  width: 30%;
+  background-color: #fff;
+  color: #060f1d;
+}
+
+.projects .card:hover {
+  transform: scale(1.05);
+}
+.projects .card img {
+  border-radius: 50%;
+  margin-bottom: 0.2%;
+  width: 40%;
+}
+.projects .card h5 {
+  background: var(--text-color-2);
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects .card p {
+  font-size: 15px;
+  margin-bottom: 5%;
+}
+.projects .card a,
+.projects a {
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color-1);
+  display: inline-block;
+  font-size: var(--normal);
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.projects .card a:hover,
+.projects a:hover {
+  background-color: var(--btn-hover);
+  letter-spacing: 1px;
+}
+
+.projects > a {
+  margin-top: 5%;
+  width: 200px !important;
+}
