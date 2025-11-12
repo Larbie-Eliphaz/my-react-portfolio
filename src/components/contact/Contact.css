@@ -1,0 +1,104 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  /* background-color: #f9f9f9; */
+}
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact .contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.contact .contact-section .left-pane,
+.contact .contact-section form {
+  flex: 1;
+  padding: 1rem;
+}
+.contact .contact-section .left-pane h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(250deg, #df7625 80%, #b415ff 99.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact .contact-section .left-pane p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: #fff;
+}
+
+.contact .contact-section .left-pane .links {
+  margin-top: 2rem;
+}
+.contact .contact-section .left-pane .links .contact-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.contact .contact-section .left-pane .links .contact-link a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #df7625;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact .contact-section .left-pane .links .contact-link img {
+  width: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  margin-right: 0.7rem;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}
+
+.contact .contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact .contact-section form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.contact .contact-section form input,
+.contact .contact-section form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #32323c;
+  color: #fffffa;
+}
+
+.contact .contact-section form input:focus,
+.contact .contact-section form textarea:focus {
+  outline: none;
+  border-color: #df7625;
+  box-shadow: 0 0 5px #df7625;
+}
+
+.contact .contact-section form button {
+  padding: 0.75rem;
+  background-color: #df7625;
+  background: linear-gradient(200deg, #df7625 40%, #b415ff 99.94%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact .contact-section form button:hover {
+  background-color: hsl(26, 74%, 41%);
+  transform: scale(1.02);
+}

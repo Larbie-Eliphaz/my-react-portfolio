@@ -15,8 +15,8 @@ const Projects = () => {
         <div class="card-body">
           <h5 class="card-title">Todo-List App</h5>
           <p class="card-text">
-            The To-do list app helps users to organize their tasks and stay
-            productive by allowing them to create, edit, and prioritize their
+            The To-do list app helps to organize tasks and stay
+            productive by allowing to create, edit, and prioritize
             To-do list. With a user-friendly interface, users can easily add
             tasks, set deadlines, and mark them as complete.
           </p>
