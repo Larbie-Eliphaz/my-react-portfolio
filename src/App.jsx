@@ -5,6 +5,8 @@ import About from "./components/about/About.jsx";
 import Services from "./components/services/Services.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Contact from "./components/contact/Contact.jsx";
+import Footer from "./components/footer/Footer.jsx";
+import Skills from "./components/skills/Skills.jsx";
 
 const App = () => {
   return (
@@ -14,7 +16,9 @@ const App = () => {
       <About />
       <Services />
       <Projects />
+      <Skills/>
       <Contact />
+      <Footer/>
     </div>
   );
 };

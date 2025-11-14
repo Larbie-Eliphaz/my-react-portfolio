@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.footer .top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .top .left{
+    width: 50%;
+}
+.footer .top .left h2{
+    font-size: 28px;
+    margin: 15px auto;
+    background: linear-gradient(250deg, #df7625 80%, #b415ff 99.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer .top .left p{
+    line-height: 25px;
+}
+
+.footer .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.footer .right input{
+    display: block;
+    font-size: 18px;
+    padding: 8px 5px;
+    border-radius: 10px;
+    background-color: #32323c;
+    color: rgb(186, 202, 216);
+}
+.footer .right button{
+    padding: 8px 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(200deg, #df7625 40%, #b415ff 99.94%);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.footer .right button:hover{
+    transform: scale(1.1);
+}
+
+.footer hr{
+    background-color: rgb(80, 74, 74);
+    border: none;
+    height:2px;
+    margin: 10px;
+}
+
+.footer .down{
+    display:flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.footer .down div{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}

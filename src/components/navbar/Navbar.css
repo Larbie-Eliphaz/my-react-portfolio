@@ -15,13 +15,15 @@
   display: flex;
   gap: 60px;
   font-size: 20px;
+  position: relative;
 }
 .nav-items a {
   text-decoration: none;
-  color: #333;
+  color: #a5a5a5;
+  transition: all 0.3s;
 }
 .nav-items a:hover {
-  color: #007bff;
+  color: #fff;
 }
 .nav-connect {
   padding: 10px 20px;
