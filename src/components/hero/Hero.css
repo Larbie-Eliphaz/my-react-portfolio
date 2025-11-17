@@ -1,25 +1,39 @@
 .hero{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 25px;
+    margin: 90px 10px;
 }
+
 .hero .profile-img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 70px;
+    margin-top: 50px;
     border: 4px solid;
     border-color:#b415ff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-self: flex-start;
+}
+.hero .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.hero .text>*{
+    align-self: flex-start;
 }
 
 .hero .intro-text {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     font-weight: 500;
     width: 70%;
+    line-height: 60px;
 }
 .hero .intro-text span{
     background:linear-gradient(27deg, #da7625 0.56%, #b923e1 99.64%);
@@ -30,7 +44,7 @@
 
 .hero p{
     width: 50%;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     line-height: 40px;
 }
@@ -39,19 +53,19 @@
     display: flex;
     gap: 25px;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 50px;
 
 }
 .hero-connect{
-    padding: 15px 20px;
+    padding: 10px 20px;
     border-radius: 50px;
     background: linear-gradient(264deg, #df7625 -5.09%, #b415ff 99.94%);
     cursor: pointer;
 }
 .hero-resume{
-    padding: 15px 30px;
+    padding: 10px 30px;
     border-radius: 50px;
     border: 2px solid #fff;
     cursor: pointer;
@@ -66,4 +80,33 @@
 .hero-resume:hover{
     /* background: linear-gradient(264deg, #df7625 -5.09%, #b415ff 99.94%); */
     border: 2px solid #b415ff;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 50px 10px;
+        gap:40px;
+    }
+    .hero .profile-img {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+    .hero .intro-text {
+        font-size: 30px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .hero p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .hero-actions{
+        flex-direction: column;
+        gap: 25px;
+    }
 }

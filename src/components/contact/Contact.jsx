@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './Contact.css'
 import whatsapp from '../../assets/whatsapp.svg'
 import telegram from '../../assets/telegram.svg'
@@ -9,8 +9,26 @@ import email from '../../assets/envelope.svg'
 
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    formData.append("access_key", "391c58e2-f246-4eec-a670-7711218dc514");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "success" : "error");
+
+    setTimeout(()=>{setResult("")}, 2000)
+  };
+
   return (
-    <div className="contact">
+    <section className="contact" id="contact">
       <h1>Contact Me</h1>
       <div className="contact-section">
         <div className="left-pane">
@@ -41,14 +59,16 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="right-pane">
-            <input type="text" name="name" id="name" placeholder="Fullname"/>
-            <input type="email" name="email" id="email" placeholder="Email"/>
-            <textarea name="message" id="message" cols="30" rows="7" placeholder="Your Message"></textarea>
+        <form className="right-pane" onSubmit={onSubmit}>
+            <input type="text" name="name" id="name" placeholder="Fullname" required/>
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+            <textarea name="message" id="message" cols="30" rows="7" required placeholder="Your Message"></textarea>
             <button type="submit">Send Message</button>
+            {result==="success" && <p className="success">Success!</p>}
+            {result==="error" && <p className="error">Error</p>}
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

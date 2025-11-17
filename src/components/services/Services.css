@@ -56,3 +56,12 @@
   font-size: 18px;
   margin-top: 20px;
 }
+
+@media (max-width:768px) {
+  .services {
+    margin: 50px 20px;
+  }
+  .services .container {
+    grid-template-columns: 1fr;
+  }
+}

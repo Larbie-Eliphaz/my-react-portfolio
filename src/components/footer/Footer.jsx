@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="top">
         <div className="left">
           <h2>EliTech</h2>
@@ -29,7 +29,7 @@ const Footer = () => {
           <p>Connect with Me</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

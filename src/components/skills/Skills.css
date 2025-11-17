@@ -1,0 +1,49 @@
+root {
+  --primary-color: #007bff;
+  --accent-color: hsl(300, 100%, 30%);
+  --header-bg: #0a192f;
+}
+
+.main-skills {
+  color: #ffffff;
+  padding: 5% 8%;
+  text-align: center;
+}
+
+.main-skills h1 {
+  color: var(--text-color-2);
+  font-size: 40px;
+  margin-bottom: 3%;
+}
+
+.main-skills div {
+  background-color: black;
+  border-radius: 5px;
+  border-left: 3px solid var(--accent-color);
+  text-align: left;
+  padding: 10px;
+  padding-left: 0.8%;
+  margin: 1% auto;
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+}
+
+.main-skills div:hover {
+  background-color: hsl(300, 96%, 30%);
+  color: var(--text-color-1);
+  transform: scale(1.01);
+}
+
+.main-skills div h4 {
+  color: var(--text-color-1);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .main-skills {
+    padding: 5% 2%;
+  }
+  .main-skills div {
+    width: 100%;
+  }
+}

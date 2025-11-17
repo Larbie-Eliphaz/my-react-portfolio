@@ -81,3 +81,12 @@
   margin-top: 5%;
   width: 200px !important;
 }
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 5% 2%;
+  }
+  .projects .card {
+    width: 80%;
+  }
+}

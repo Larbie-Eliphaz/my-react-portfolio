@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 .footer .top .left{
-    width: 50%;
+    width: 60%;
 }
 .footer .top .left h2{
     font-size: 28px;
@@ -33,10 +33,12 @@
 .footer .right input{
     display: block;
     font-size: 18px;
-    padding: 8px 5px;
+    padding: 8px 20px;
     border-radius: 10px;
     background-color: #32323c;
     color: rgb(186, 202, 216);
+    width:300px;
+
 }
 .footer .right button{
     padding: 8px 10px;
@@ -67,4 +69,41 @@
     display: flex;
     justify-content: space-between;
     width: 30%;
+}
+.footer .down div img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer .down div img:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .top .left, .footer .top .right {
+    width: 100%;
+  }
+  .footer .right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .right input {
+    width: 100%;
+  }
+  .footer .down {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer .down div {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
 }

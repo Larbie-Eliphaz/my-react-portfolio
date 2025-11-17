@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 170px;
+  border-bottom: 1px solid rgb(39, 38, 38);
+  padding-bottom: 10px;
 }
 .navbar-logo {
   font-size: 30px;
@@ -21,21 +23,79 @@
   text-decoration: none;
   color: #a5a5a5;
   transition: all 0.3s;
+  position: relative;
 }
 .nav-items a:hover {
   color: #fff;
 }
+.nav-items a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: #b923e1;
+  transition: 0.3s;
+}
+.nav-items a:hover::before {
+  width: 100%;
+}
+
 .nav-connect {
-  padding: 10px 20px;
+  padding: 8px 20px;
   background: linear-gradient(#da7625 0.36%, #b923e1 99.64%);
   color: white;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
   transition: all 0.3s ease;
 }
 .nav-connect:hover {
   background: linear-gradient(#b923e1 0.36%, #da7625 99.64%);
   transform: scale(1.05);
+}
+
+.menu-close, .menu-open{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+    max-width: 700px;
+  }
+  .nav-connect{
+    display: none;
+  }
+  .menu-open{
+    position: fixed;
+    display: block;
+    right: 30px;
+    background-color: white;
+  }
+  .menu-close{
+    display: block;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    width: 30px;
+    background-color: white;
+  }
+  .nav-items{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    z-index:2;
+    width: 350px;
+    height: 100%;
+    top:0;
+    gap: 30px;
+    transition: right 0.5s;
+    position: fixed;
+    background-color: black;
+    padding:0 10px;
+    right: -350px;
+  }
 }

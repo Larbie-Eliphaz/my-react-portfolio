@@ -4,15 +4,15 @@ import Matpic from '../../assets/matpic.JPG';
 
 const About = () => {
   return (
-    <div className="about">
+    <section className="about" id="about">
       <div className="title">
         <h2>About Me</h2>
       </div>
       <div className="description">
-        <div className="left-pane">
+        <div className="left-pane animate__animated animate__fadeInLeft animate__delay-1s">
           <img src={Matpic} alt="My image" className="img" />
         </div>
-        <div className="right-pane">
+        <div className="right-pane animate__animated animate__fadeInRight animate__delay-1s">
           <div className="p">
             <p className="">
               Hello! I'm Eliphaz Larbie, a passionate web developer with a knack
@@ -33,7 +33,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
