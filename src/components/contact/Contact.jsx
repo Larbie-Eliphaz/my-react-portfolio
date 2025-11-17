@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import './Contact.css'
-import whatsapp from '../../assets/whatsapp.svg'
-import telegram from '../../assets/telegram.svg'
-import snap from '../../assets/snapchat.svg'
-import fb from '../../assets/facebook.svg'
-import linkedin from '../../assets/linkedin.svg'
-import email from '../../assets/envelope.svg'
+import whatsapp from '../../assets/whatsapp.png'
+import telegram from '../../assets/telegram.png'
+import snap from '../../assets/snapchat.png'
+import fb from '../../assets/facebook.png'
+import linkedin from '../../assets/linkedin.png'
+import email from '../../assets/email.png'
 
 
 const Contact = () => {
@@ -40,23 +40,23 @@ const Contact = () => {
           </p>
           <div className="links">
             <div className="contact-link">
-                <img src={email} alt="" /><p>eliphazlarbie@gmail.com</p>
+                <img src={email} alt="" /><p><a href="mailto:eliphazlarbie3@gmail.com">eliphazlarbie3@gmail.com</a></p>
             </div>
             <div className="contact-link">
-                <img src={whatsapp} alt="" /><p>WhatsApp</p>
+                <img src={whatsapp} alt="" /><a href="//wa.me/+233508348125">WhatsApp</a><p></p>
             </div>
             <div className="contact-link">
-                <img src={telegram} alt="" /><p>Telegram</p>
+                <img src={telegram} alt="" /><a href="//t.me/+233508348125">Telegram</a><p></p>
             </div>
             <div className="contact-link">
-                <img src={linkedin} alt="" /><p>LinkedIn</p>
+                <img src={linkedin} alt="" /><a href="https://www.linkedin.com/in/eliphaz-larbie-583995388/">LinkedIn</a><p></p>
             </div>
-            <div className="contact-link">
+            {/* <div className="contact-link">
                 <img src={fb} alt="" /><p>FaceBook</p>
             </div>
             <div className="contact-link">
                 <img src={snap} alt="" /><p>Snap Chat</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <form className="right-pane" onSubmit={onSubmit}>

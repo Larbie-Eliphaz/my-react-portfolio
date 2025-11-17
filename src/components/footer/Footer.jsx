@@ -13,21 +13,21 @@ const Footer = () => {
             Node.js, and React-Native.
           </p>
         </div>
-        <div className="right">
+        {/* <div className="right">
           <input type="email" name="subscribe" id="subscribe" placeholder="enter your email"/>
           <button type="submit">subscribe</button>
-        </div>
+        </div> */}
       </div>
       <hr />
       <div className="down">
         <div className="copyright">
           &copy;{new Date().getFullYear()} Eliphaz Larbie. All rights reserved
         </div>
-        <div >
+        {/* <div >
           <p>Terms of Services</p>
           <p>Privacy policy</p>
           <p>Connect with Me</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
