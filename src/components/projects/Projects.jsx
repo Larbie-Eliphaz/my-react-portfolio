@@ -20,7 +20,7 @@ const Projects = () => {
             To-do list. With a user-friendly interface, users can easily add
             tasks, set deadlines, and mark them as complete.
           </p>
-          <a href="./old projects/todo.html" target="_blank">View Project</a>
+          <a href="#" target="_blank">View Project</a>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ const Projects = () => {
             users can choose from a wide range of products in different
             categories.
           </p>
-          <a href="./ecommerce.html" target="_blank">View Project</a>
+          <a href="#" target="_blank">View Project</a>
         </div>
       </div>
 
@@ -48,13 +48,9 @@ const Projects = () => {
             coffee options, users can experiment with different flavour and
             recipes.
           </p>
-          <a href="./coffeeMachine.html" target="_blank">View Project</a>
+          <a href="#" target="_blank">View Project</a>
         </div>
       </div>
-
-      <a href="./new_port_projects.html" target="_blank">
-        All Projects ➡
-      </a>
     </section>
   );
 };

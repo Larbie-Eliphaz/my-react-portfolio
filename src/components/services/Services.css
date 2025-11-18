@@ -4,10 +4,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 80px 150px;
+  padding: 80px 150px;
 }
 .services h1 {
-  font-size: 30px;
   font-weight: bold;
   font-size: 40px;
 }
@@ -19,6 +18,7 @@
   width: 100%;
 }
 .services .container .service {
+  background-color: #1a1d24;
   display: flex;
   border-radius: 10px;
   gap: 10px;
@@ -33,7 +33,7 @@
 .services .container .service:hover {
   transform: scale(1.01);
   border: 2px solid #ff00ff;
-  background-image: linear-gradient(45deg, #3f0028, #582300);
+  background-image: #232730;
 }
 
 .services .container .service h3 {
@@ -41,7 +41,7 @@
 }
 .services .container .service h2 {
   font-size: 30px;
-  background: linear-gradient(350deg, #df7625 8.09%, #b415ff 99.94%);
+  background: linear-gradient(135deg, #5fa8ff 110%, #6c63ff 0%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,10 +57,20 @@
   margin-top: 20px;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .services {
     margin: 50px 20px;
   }
+  .services .container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 360px) {
+  .services {
+    margin: 50px 0;
+    padding: 10px;
+  }
+
   .services .container {
     grid-template-columns: 1fr;
   }

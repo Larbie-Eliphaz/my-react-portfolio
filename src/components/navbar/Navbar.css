@@ -35,7 +35,7 @@
   left: 0;
   height: 3px;
   width: 0%;
-  background-color: #b923e1;
+  background-color: #6c63ff;
   transition: 0.3s;
 }
 .nav-items a:hover::before {
@@ -44,7 +44,7 @@
 
 .nav-connect {
   padding: 8px 20px;
-  background: linear-gradient(#da7625 0.36%, #b923e1 99.64%);
+  background: #6c63ff;
   color: white;
   border: none;
   border-radius: 50px;
@@ -53,7 +53,7 @@
   transition: all 0.3s ease;
 }
 .nav-connect:hover {
-  background: linear-gradient(#b923e1 0.36%, #da7625 99.64%);
+  background: hsl(244, 100%, 63%);
   transform: scale(1.05);
 }
 
@@ -97,5 +97,10 @@
     background-color: black;
     padding:0 10px;
     right: -350px;
+  }
+}
+@media (max-width:360px) {
+  .nav-items{
+    width:340px;
   }
 }

@@ -12,9 +12,9 @@
     width: 60%;
 }
 .footer .top .left h2{
-    font-size: 28px;
+    font-size: 30px;
     margin: 15px auto;
-    background: linear-gradient(250deg, #df7625 80%, #b415ff 99.94%);
+    background:linear-gradient(135deg, #5fa8ff 110%, #6c63ff 0%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

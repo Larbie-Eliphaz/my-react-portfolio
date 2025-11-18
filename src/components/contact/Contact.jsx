@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import './Contact.css'
 import whatsapp from '../../assets/whatsapp.png'
 import telegram from '../../assets/telegram.png'
-import snap from '../../assets/snapchat.png'
-import fb from '../../assets/facebook.png'
+// import snap from '../../assets/snapchat.png'
+// import fb from '../../assets/facebook.png'
 import linkedin from '../../assets/linkedin.png'
 import email from '../../assets/email.png'
 
@@ -51,12 +51,6 @@ const Contact = () => {
             <div className="contact-link">
                 <img src={linkedin} alt="" /><a href="https://www.linkedin.com/in/eliphaz-larbie-583995388/">LinkedIn</a><p></p>
             </div>
-            {/* <div className="contact-link">
-                <img src={fb} alt="" /><p>FaceBook</p>
-            </div>
-            <div className="contact-link">
-                <img src={snap} alt="" /><p>Snap Chat</p>
-            </div> */}
           </div>
         </div>
         <form className="right-pane" onSubmit={onSubmit}>

@@ -1,20 +1,12 @@
-:root {
-  --primary-color: #007bff;
-  --accent-color: #ff00ff;
-  --header-bg: #0a192f;
-  --btn-hover: hsl(300, 100%, 40%);
-  --icon-hover: #e65100;
-  --footer-color: #1c1c1c;
-  --text-color-1: #ffffff;
-  --text-color-2: linear-gradient(45deg, #3f0028, #582300);
+h5{
 }
-
+.card{
+}
 .projects {
   padding: 5% 8%;
   text-align: center;
 }
 .projects h1 {
-  color: var(--text-color-2);
   font-size: 40px;
 }
 
@@ -26,20 +18,21 @@
 }
 
 .projects .card {
+  background-color: #1a1d24;
   display: inline-block;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #2a2e38;
   margin: 1%;
   padding: 10px 15px;
   transition: all 0.3s ease-in-out;
   width: 30%;
-  background-color: #fff;
   color: #060f1d;
 }
 
 .projects .card:hover {
   transform: scale(1.05);
+  background-color: #232730;
 }
 .projects .card img {
   border-radius: 50%;
@@ -47,34 +40,26 @@
   width: 40%;
 }
 .projects .card h5 {
-  background: var(--text-color-2);
+  color: #a0aec0;
   font-size: 1.2rem;
   margin-bottom: 2%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .projects .card p {
   font-size: 15px;
   margin-bottom: 5%;
+  text-align: left;
 }
 .projects .card a,
 .projects a {
-  background-color: var(--accent-color);
+  background-color: #6c63ff;
   border: none;
   border-radius: 5px;
-  color: var(--text-color-1);
+  color: #fff;
   display: inline-block;
-  font-size: var(--normal);
   padding: 8px 10px;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-}
-.projects .card a:hover,
-.projects a:hover {
-  background-color: var(--btn-hover);
-  letter-spacing: 1px;
 }
 
 .projects > a {
@@ -88,5 +73,14 @@
   }
   .projects .card {
     width: 80%;
+  }
+}
+
+@media (max-width:360px) {
+  .projects h1{
+    font-size: 30px;
+  }
+  .projects .card{
+    margin-bottom: 20px;
   }
 }

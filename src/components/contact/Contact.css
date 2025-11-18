@@ -13,15 +13,11 @@
   justify-content: center;
   gap: 1rem;
 }
-.contact .contact-section .left-pane,
-.contact .contact-section form {
-  flex: 1;
-  padding: 1rem;
-}
+
 .contact .contact-section .left-pane h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(250deg, #df7625 80%, #b415ff 99.94%);
+    background:linear-gradient(135deg, #5fa8ff 110%, #6c63ff 0%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,13 +39,12 @@
 .contact .contact-section .left-pane .links .contact-link a {
   display: block;
   margin-bottom: 0.5rem;
-  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 .contact .contact-section .left-pane .links .contact-link a:hover {
   text-decoration: underline;
-}   
+}
 
 .contact .contact-section .left-pane .links .contact-link img {
   width: 30px;
@@ -66,10 +61,7 @@
   flex-direction: column;
   gap: 1rem;
 }
-.contact .contact-section form label {
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
+
 .contact .contact-section form input,
 .contact .contact-section form textarea {
   margin-bottom: 1rem;
@@ -91,7 +83,7 @@
 .contact .contact-section form button {
   padding: 0.75rem;
   background-color: #df7625;
-  background: linear-gradient(200deg, #df7625 40%, #b415ff 99.94%);
+    background:linear-gradient(135deg, #5fa8ff 110%, #6c63ff 0%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,25 +96,49 @@
   background-color: hsl(26, 74%, 41%);
   transform: scale(1.02);
 }
-.contact .contact-section form .success{
+.contact .contact-section form .success {
   text-align: center;
   font-size: 20px;
   color: greenyellow;
 }
-.contact .contact-section form .error{
+.contact .contact-section form .error {
   text-align: center;
   font-size: 20px;
   color: red;
 }
 
 @media (max-width: 768px) {
+  .contact{
+    margin: 0;
+    padding: 20px;
+  }
   .contact .contact-section {
     flex-direction: column;
   }
-  .contact .contact-section .left-pane,
-  .contact .contact-section form {
-    width: 90%;
-    margin-left: 5px
-
+  .contact .contact-section form input{
+    margin: 0;
   }
+  .contact h1{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:360px){
+  .contact{
+    margin-left: 0px;
+  }
+  
+  .contact .contact-section .left-pane {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact .contact-section .left-pane p{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .contact .contact-section form{
+    max-width: 340px;
+  }
+
 }
