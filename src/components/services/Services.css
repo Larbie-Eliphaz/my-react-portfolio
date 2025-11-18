@@ -62,6 +62,6 @@
     margin: 50px 20px;
   }
   .services .container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
