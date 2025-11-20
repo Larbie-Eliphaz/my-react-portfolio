@@ -1,5 +1,5 @@
 import React from "react";
-import coffeeMachine from "../../assets/coffeemachine.jpg";
+import weather from "../../assets/weather.png";
 import ecommerce from "../../assets/e-commerce .jpg";
 import todo from "../../assets/todo.png";
 import "./Projects.css";
@@ -15,12 +15,14 @@ const Projects = () => {
         <div class="card-body">
           <h5 class="card-title">Todo-List App</h5>
           <p class="card-text">
-            The To-do list app helps to organize tasks and stay
-            productive by allowing to create, edit, and prioritize
-            To-do list. With a user-friendly interface, users can easily add
-            tasks, set deadlines, and mark them as complete.
+            The To-do list app helps to organize tasks and stay productive by
+            allowing to create, edit, and prioritize To-do list. With a
+            user-friendly interface, users can easily add tasks, set deadlines,
+            and mark them as complete.
           </p>
-          <a href="#" target="_blank">View Project</a>
+          <a href="#" target="_blank">
+            View Project
+          </a>
         </div>
       </div>
 
@@ -34,21 +36,25 @@ const Projects = () => {
             users can choose from a wide range of products in different
             categories.
           </p>
-          <a href="#" target="_blank">View Project</a>
+          <a href="#" target="_blank">
+            View Project
+          </a>
         </div>
       </div>
 
       <div class="card">
-        <img src={coffeeMachine} class="card-img-top" alt="card image" />
+        <img src={weather} class="card-img-top" alt="card image" />
         <div class="card-body">
-          <h5 class="card-title">Virtual Coffee Machine</h5>
+          <h5 class="card-title">Weather App</h5>
           <p class="card-text">
-            The virtual coffee machine is an interactive simulation that allows
-            users design and brew their perfect cup of coffee. With various
-            coffee options, users can experiment with different flavour and
-            recipes.
+            The Weather App provides real-time weather information for any
+            location. Users can check current conditions, forecasts, and weather
+            alerts. The app features an intuitive interface and accurate data to
+            help users plan their day.
           </p>
-          <a href="#" target="_blank">View Project</a>
+          <a href="https://eliphaz-weather-app.netlify.app/" target="_blank">
+            View Project
+          </a>
         </div>
       </div>
     </section>
