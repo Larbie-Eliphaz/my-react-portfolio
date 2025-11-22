@@ -20,7 +20,7 @@ const Projects = () => {
             user-friendly interface, users can easily add tasks, set deadlines,
             and mark them as complete.
           </p>
-          <a href="#" target="_blank">
+          <a href="https://eliphaz-mern-todo-list.netlify.app/" target="_blank">
             View Project
           </a>
         </div>
