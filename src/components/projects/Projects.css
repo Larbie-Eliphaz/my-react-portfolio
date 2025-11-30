@@ -28,6 +28,7 @@ h5{
   transition: all 0.3s ease-in-out;
   width: 30%;
   color: #060f1d;
+  height: 330px;
 }
 
 .projects .card:hover {
